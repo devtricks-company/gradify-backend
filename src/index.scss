@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+$font-pop: 'Poppins', sans-serif;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+body{
+    background-color: #f7f7fa;
+    .proContainer {
+        display: none !important;
+      }
+}
+
+#login{
+    width:100%;
+    min-height: 100vh;
+    background: #f8f8fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login_container{
+        width: 451px;
+        height: 493px;
+        background:white;
+    
+        .login_header{
+            width: 100%;
+            height: 112px;
+            background:url('./assests/images/user-with-laptop.png');
+            background-size: cover;
+            &_content{
+                padding-top: 30px;
+                padding-left: 30px;
+                font-family: $font-pop;
+                font-size:16px;
+                font-weight: 400;
+                line-height: 1.55;
+                color:#556ee6;
+                p{
+                    font-size: 13px;
+                }
+
+            }
+            &_image{
+                position: relative;
+                top:-47px;
+            }
+
+
+        }
+
+        .login-body{
+            padding:30px 30px;
+              .login_input{
+                margin-top: 20px;
+                  label{
+                    color:#495057;
+                    font-weight: 500;
+                    font-family: $font-pop;
+                    
+                    font-size: 13px;
+                  }
+                  input{
+                      margin-top: 8px;
+                      display: block;
+                      width:100%;
+                      padding:8px 80px 9.5px 12px;
+                      border-radius: 4px;
+                      border:1px solid #495057;
+                      &::placeholder{
+                        
+                        font-family: $font-pop;
+                        font-size: 13px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.54;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #495057
+                      }
+                  }
+              }  
+        }
+
+    }
+}
+
+.MuiFormControlLabel-label{
+    font-size: 13px !important;
+    padding-left: 10px;
+}
+.login-button{
+    display: block !important;
+    width:100% !important;
+}
+
+
+.sidebar{
+    width:252px;
+    background:#2a3042;
+    min-height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 2;
+    
+    
+}
+.sidebar .sidebar-header{
+    text-align: center;
+}
+.sidebar img{
+    width:187px;
+    height: 82px;
+    margin: 0 auto;
+}
+
+.sidebar .menu{
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-family: $font-pop;
+    color:#6a7187;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.navbar{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:1rem;
+    background: white;
+   .navbar_flag{
+        img{
+            width: 30px;
+            
+        }
+   }
+   .navbar_icons-window{
+       padding-left: 10px;
+       padding-right: 100px;
+       img{
+           width:30px;
+           
+       }
+   }
+   .navbar_nortify{
+       a{
+           position: relative;
+           text-decoration: none;
+       }
+       img{
+           width:30px;
+       }
+       .badge{
+            background: #f46a6a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top:-25px;
+            right: -5px;
+            width: 15px;
+            height: 15px;
+            text-decoration: none;
+            color:white;
+            padding:10px;
+            border-radius: 50%;
+            font-size: 12px;
+            font-family: $font-pop;
+       }
+   }
+   .navbar_picture{
+       margin-right: 10px;
+       margin-left: 10px;
+       img{
+           width: 30px;
+       }
+   }
+   .navbar_student_name{
+    margin-right: 10px;
+       color:#555b6d;
+       font-family: $font-pop;
+       a{
+        text-decoration: none;
+       }
+   }
+}
+
+.layout{
+    display: flex;
+    min-height: 100vh;
+    
+}
+.main{
+    padding-left: 276px;
+    padding-top:20px;
+    min-width:98%;
+    min-height: 100vh;
+}
+
+.menu-span{
+    padding-left: 15px;
+    color:white;
+    font-family: $font-pop;
+    text-transform: capitalize;
+    font-size: 15px;
+
+
+}
+.menu-bar{
+    list-style: none;
+    li{
+        padding-top:20px;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+.header-student{
+    display: flex;
+    align-items:center;
+    width:100%;
+    h2{
+        text-transform: uppercase;
+        color:#495057;
+        font-family: $font-pop;
+        font-size: 16px;
+    }
+    h4{
+        padding-left: 16px;
+        padding-top:2px;
+        font-family: $font-pop;
+        font-size:13px;
+        color:#495057;
+    }
+}
+.studentNameTable{
+    color:black;
+    text-decoration: none;
+    
+}
+.student-card{
+    width:524px;
+    min-height: 130px;
+    
+}
+.student-image{
+    height: 350px;
+    img{
+        width:100%;
+       
+        object-fit: cover;
+        
+    }
+    .student-content{
+        background-color:white;
+        height: 175px;
+        position: relative;
+        top:-145px;
+          
+    }
+    .student-content-info{
+        padding-top: 70px;
+        display: flex;
+        
+        h2{
+            font-family: $font-pop;
+            padding-left: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.53;
+            color:#495057;
+            padding-left: 45px;
+
+        }
+        p{
+            font-family: $font-pop;
+            padding-left: 47px;
+            font-size: 13px;
+            color:#74788d;
+        }
+
+    }
+}
+
+.profile-picture{
+    width:142px !important;
+    height: 142px;
+    border-radius: 50%;
+    border:10px solid white;
+    position: absolute;
+    top:-75px;
+    left: 20px;
+
+}
+iframe{
+    width: 95% !important;
+    height: 45% !important;
+    border:none;
+    border-radius: 8px;
+}
+.report-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
