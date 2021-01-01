@@ -313,4 +313,115 @@ iframe{
     flex-wrap: wrap;
 
 }
+.students-content{
+    padding-top:35px;
+}
+.MuiTableCell-head{
+    font-size:13px !important;
+}
+.MuiTableCell-body{
+    font-size: 13px !important;
+}
+.tablebar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.tablebar__sgroup{
+    position: relative;
+}
+.add-xp-panel{
+    width:308px;
+    height: 200px;
+    background:#777481;
+    position: absolute;
+    top:70px;
+    left:-200px;
+    z-index: 3;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    padding:25px;
+    text-align: center;
+    h2{
+        flex-basis: 100%;
+        font-family: $font-pop;
+        font-size: 20px;
+        letter-spacing: 2.73px;
+        color:#fff;
+        opacity: 0.5;
+        font-weight: 400px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid rgba(255,255,255,0.5);
+        text-align: left;
+    }
+    input{
+        padding:8px 15px;
+        border-radius: 50px;
+        border:none;
+        outline: none;
+        margin-top:10px;
+        background:#84828d;
+        color:white;
+        &::placeholder{
+            color:white;
+        }
 
+
+    }
+    .description_input{
+        padding:16px 15px;
+    }
+    
+}
+.xp-container{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+
+}
+
+.search_input{
+    padding:12px 10px;
+    border:1px solid black;
+    outline:none;
+    border-radius: 25px;
+    width:300px;
+    text-indent: 20px;
+}
+.tablebar_import{
+    background: #34c38f;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+.tablebar_new{
+    background:#3068bb;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    outline:none;
+    border-radius: 50px;
+    margin-left:20px;
+    cursor: pointer;
+}
+.tablebar_xp{
+    background: #4ac1b8;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    outline:none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}

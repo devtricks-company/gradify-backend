@@ -2,12 +2,13 @@ import React,{useReducer} from 'react';
 import StudentContext from './studentContext';
 import studentReducer from './studentReducer';
 import axios from 'axios';
-import {GET_ALL_STUDENTS,GET_A_STUDENT} from '../types';
+import {GET_ALL_STUDENTS,GET_A_STUDENT,SEARCH_STUDENT} from '../types';
 
 const StudentState = (props) => {
     const initalState = {
         students:null,
-        student:null
+        student:null,
+        searchStudents:null
     }
 
     const [state,dispatch] = useReducer(studentReducer,initalState);
@@ -43,12 +44,21 @@ const StudentState = (props) => {
 
     }
 
+    const searchStudent = async (text) => {
+        dispatch({
+            type:SEARCH_STUDENT,
+            payload:text
+        })
+    }
+
     return(
         <StudentContext.Provider value={{
             students:state.students,
+            searchStudents:state.searchStudents,
             student:state.student,
             getAllStudents,
-            getAStudent
+            getAStudent,
+            searchStudent
         }}> 
             {props.children}
         </StudentContext.Provider>
